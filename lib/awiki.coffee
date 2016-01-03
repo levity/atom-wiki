@@ -21,9 +21,9 @@ module.exports =
     @subscriptions = new CompositeDisposable
 
     # Register command that toggles this view
-    @subscriptions.add atom.commands.add 'atom-workspace', 'awiki:openOrCreateWikiLink': => @openOrCreateWikiLink()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'awiki:gotoLastWikiPage': => @gotoLastWikiPage()
-    @subscriptions.add atom.commands.add 'atom-workspace', 'awiki:openWikiIndex': => @openWikiIndex()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'wiki:openOrCreateWikiLink': => @openOrCreateWikiLink()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'wiki:gotoLastWikiPage': => @gotoLastWikiPage()
+    @subscriptions.add atom.commands.add 'atom-workspace', 'wiki:openWikiIndex': => @openWikiIndex()
 
 
   deactivate: ->

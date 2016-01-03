@@ -12,9 +12,9 @@
   ],
   "activationCommands": {
     "atom-workspace": [
-      "awiki:openWikiIndex",
-      "awiki:openOrCreateWikiLink",
-      "awiki:gotoLastWikiPage"
+      "wiki:openWikiIndex",
+      "wiki:openOrCreateWikiLink",
+      "wiki:gotoLastWikiPage"
     ]
   },
   "repository": "https://github.com/levity/atom-wiki",

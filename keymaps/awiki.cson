@@ -1,4 +1,4 @@
 'atom-workspace atom-text-editor:not([mini])':
-  'alt-enter': 'awiki:openOrCreateWikiLink'
-  'shift-alt-backspace': 'awiki:gotoLastWikiPage'
-  'alt-w': 'awiki:openWikiIndex'
+  'alt-enter': 'wiki:openOrCreateWikiLink'
+  'shift-alt-backspace': 'wiki:gotoLastWikiPage'
+  'alt-w': 'wiki:openWikiIndex'

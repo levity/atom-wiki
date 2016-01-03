@@ -1,5 +1,5 @@
 {
-  "name": "awiki",
+  "name": "Wiki",
   "main": "./lib/awiki",
   "version": "0.3.1",
   "description": "A personal wiki for Atom",
@@ -17,7 +17,7 @@
       "awiki:gotoLastWikiPage"
     ]
   },
-  "repository": "https://github.com/Dessyreqt/awiki",
+  "repository": "https://github.com/levity/atom-wiki",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

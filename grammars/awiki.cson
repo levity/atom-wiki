@@ -2,7 +2,7 @@
 'fileTypes': [
   'wiki',
 ]
-'name': 'Awiki'
+'name': 'Wiki'
 'patterns': [
   # links
   {

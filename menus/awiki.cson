@@ -10,7 +10,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'Awiki'
+      'label': 'Wiki'
       'submenu': [
         {
           'label': 'Open Wiki Index'

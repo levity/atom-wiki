@@ -77,8 +77,8 @@ module.exports = Awiki =
         editor.moveRight()
         editor.moveToBeginningOfWord()
         editor.selectToEndOfWord()
-        editor.insertText("[[#{selectedText}]]")
-        editor.setCursorBufferPosition([currentPosition.row, currentPosition.column + 2])
+        editor.insertText("[#{selectedText}]")
+        editor.setCursorBufferPosition([currentPosition.row, currentPosition.column + 1])
       )
     else
       selectedRange = editor.getSelectedBufferRange()

@@ -4,17 +4,11 @@
 ]
 'name': 'Wiki'
 'patterns': [
-  # links
   {
-    'match': '\\[\\[.*?]]'
+    'include': 'source.gfm'
+  }
+  {
+    'match': '\\[.*?]'
     'name': 'string.other.link.wiki'
-  }
-  {
-    'match': '^=.*=$'
-    'name': 'markup.bold.wiki'
-  }
-  {
-    'match': '\\W(_.+?_)\\W'
-    'name': 'markup.italic.wiki'
   }
 ]

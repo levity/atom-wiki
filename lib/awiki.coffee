@@ -2,7 +2,7 @@
 {TextEditor} = require 'atom'
 Os = require 'os'
 
-module.exports = Awiki =
+module.exports =
   subscriptions: null
   history: []
   pathSeparator: null
@@ -52,7 +52,7 @@ module.exports = Awiki =
 
   openWikiIndex: ->
     @checkWikiPath()
-    indexDirectory = atom.config.get("awiki.wikiLocation")
+    indexDirectory = atom.config.get("wiki.wikiLocation")
     indexPath = "#{indexDirectory}index.#{@extension}"
     atom.workspace.open(indexPath)
 
@@ -88,14 +88,14 @@ module.exports = Awiki =
   #config functions
 
   checkWikiPath: ->
-    wikiLocation = atom.config.get('awiki.wikiLocation')
+    wikiLocation = atom.config.get('wiki.wikiLocation')
 
     if !wikiLocation
-      atom.config.set('awiki.wikiLocation', @getDefaultWikiPath())
+      atom.config.set('wiki.wikiLocation', @getDefaultWikiPath())
       return
 
     if wikiLocation.lastIndexOf(@pathSeparator) != wikiLocation.length - 1
-      atom.config.set('awiki.wikiLocation', "#{wikiLocation}#{@pathSeparator}")
+      atom.config.set('wiki.wikiLocation', "#{wikiLocation}#{@pathSeparator}")
 
   #cross-platform functions
 

@@ -82,8 +82,8 @@ module.exports =
       )
     else
       selectedRange = editor.getSelectedBufferRange()
-      editor.insertText("[[#{selectedText}]]")
-      editor.setSelectedBufferRange([[selectedRange.start.row, selectedRange.start.column + 2], [selectedRange.end.row, selectedRange.end.column + 2]])
+      editor.insertText("[#{selectedText}]")
+      editor.setSelectedBufferRange([[selectedRange.start.row, selectedRange.start.column + 1], [selectedRange.end.row, selectedRange.end.column + 1]])
 
   #config functions
 

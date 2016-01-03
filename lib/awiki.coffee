@@ -90,8 +90,9 @@ module.exports = Awiki =
   checkWikiPath: ->
     wikiLocation = atom.config.get('awiki.wikiLocation')
 
-    if wikiLocation == ''
+    if !wikiLocation
       atom.config.set('awiki.wikiLocation', @getDefaultWikiPath())
+      return
 
     if wikiLocation.lastIndexOf(@pathSeparator) != wikiLocation.length - 1
       atom.config.set('awiki.wikiLocation', "#{wikiLocation}#{@pathSeparator}")

@@ -32,7 +32,7 @@ module.exports = Awiki =
   #features
 
   getDefaultWikiPath: ->
-    atom.packages.getPackageDirPaths() + "#{@pathSeparator}awiki#{@pathSeparator}wiki#{@pathSeparator}"
+    atom.packages.getPackageDirPaths() + "#{@pathSeparator}wiki#{@pathSeparator}data#{@pathSeparator}"
 
   openWikiLink: ->
     editor = atom.workspace.getActiveTextEditor()
